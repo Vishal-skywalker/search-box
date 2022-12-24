@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/60aa0ed80b.js" crossorigin="anonymous"></script>
+  <title>Search...</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="search-box">
+      <input type="text" class="search" id="searchbox" placeholder="Srearch Cities ..." />
+      <button onclick="handleSearch()">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </button>
+    </div>
+    <!-- <div style="background-color: red; height: 5vh;">123</div> -->
+    <div class="list-container">
+      <ul class="list">
+        <!-- <li class="item" data-idx="1" onclick="handleClick(event)">Kolkata</li> -->
+      </ul>
+    </div>
+  </div>
+  <div class="search-results">
+    <p>Search Results</p>
+    <div class="pagination">
+      <p class="page">
+        <span id="pageNumber"></span> of <span id="number-of-pages"></span>
+      </p>
+      <div class="nav-button">
+        <button class="nav">
+          <i class="fa-solid fa-backward-fast" onclick="firstPage()"></i>
+        </button>
+        <button class="nav" onclick="prevPage()">
+          <i class="fa-sharp fa-solid fa-backward"></i>
+        </button>
+        <button class="nav">
+          <i class="fa-sharp fa-solid fa-forward" onclick="nextPage()"></i>
+        </button>
+        <button class="nav" onclick="lastPage()">
+          <i class="fa-solid fa-forward-fast"></i>
+        </button>
+      </div>
+    </div>
+    <div class="results"></div>
+    <!-- <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table> -->
+  </div>
+  <!-- <script type="application/javascricpt" src="index.html"></script> -->
+  <script src="index.js"></script>
+</body>
+
+</html>

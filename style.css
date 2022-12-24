@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search {
+    width: 30vw;
+    height: 5vh;
+    border: none;
+    background-color: transparent;
+    font-size: 2vh;
+}
+.search:focus{
+    outline: none;
+}
+.search-box{
+    border: 2px solid rgb(220, 216, 216);
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    color: grey;
+    transform: scale(1.5);
+}
+
+.list-container{
+    background-color: white;
+    position: fixed;
+    top: 10.5vh;
+    left: calc((100vw - 30vw)/2);
+    width: 30vw;
+    box-shadow: 5px 5px 5px rgba(134, 131, 131, 0.505);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.list {
+    list-style: none;
+    line-height: 3vh;
+}
+
+.item {
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(233, 222, 222);
+}
+.item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+.item:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.item:hover {
+    background-color: rgb(220, 216, 216);
+}
+.show {
+    visibility: visible;
+}
+.item > b {
+    color: rgba(19, 19, 189, 0.689);
+    font-weight: bolder;
+}
+button {
+    background-color: transparent;
+    border: none;
+    transition: transform .2s;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.5);
+    /* box-shadow: ; */
+}
+/* table {
+    width: 100vw;
+    border-collapse: collapse;
+} */
+/* tr {
+    text-align: center;
+    
+} */
+/* .rows:nth-child(2n-1){
+    height: 4vh;
+    background-color: aliceblue;
+} */
+
+.search-results > p {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+
+.card {
+    /* border: 1px solid red; */
+    transition: transform 0.5s;
+    background-color: aliceblue;
+    flex: 0 0 18%;
+    padding: 1vw;
+    margin: 0.5vw;
+    /* width: 20px; */
+    height: 15vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px rgba(134, 131, 131, 0.505);
+    transform: scale(1.1);
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.card > p {
+    text-align: center;
+    text-size-adjust: auto;
+    font-size: 2.2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card > p:first-child {
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+.nav-button {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    margin: 0 1em;
+}
