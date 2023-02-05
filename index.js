@@ -14,8 +14,8 @@ cities = [];
 //     cities = [...r];
 //     console.log(cities[0]);
 //   });
-url = 'http://192.168.1.8:8081/cities?q=';
-// url = 'http://192.168.52.182:8081/cities?q=';
+// url = 'http://192.168.1.8:8081/cities?q=';
+url = 'https://searchbox-0hjf.onrender.com/cities?q=';
 async function getData(searchValue) {
   const response = await fetch(url + searchValue)
   const res = await response.json();
